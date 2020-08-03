@@ -1,0 +1,8 @@
+{
+    "code": "200",
+    "message": "",
+    "data": [
+        { "name": "优秀", "value": 150 },
+        { "name": "其他", "value": 50 }
+    ]
+}

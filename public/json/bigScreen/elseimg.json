@@ -1,0 +1,225 @@
+{
+    "code": "200",
+    "message": "",
+    "data": {
+        "moduleType": "pie",
+        "param": {
+            "peiZhi": {
+              "name": {
+                "type": "texttitle",
+                "shuxing": {
+                  "name": "其他图片"
+                }
+              },
+              "toumingdu": {
+                "type": "dapingzoom",
+                "shuxing": {
+                  "name": "透明度",
+                  "value": 100
+                }
+              },
+              "bkcolor": {
+                "type": "colorselect",
+                "shuxing": {
+                  "name": "背景色",
+                  "value": ""
+                }
+              },
+              "imgdizhi": {
+                "type": "sendimg",
+                "shuxing": {
+                  "name": "图片地址",
+                  "imgtype":"elseimg", 
+                  "value": "http://boot.jeecg.com:8080/jeecg-boot/bigscreen/img/source/source16.png",  
+                  "action": "" 
+                }
+              },
+              "imghover": {
+                "type": "kaiguanlist",
+                "children": {
+                  "header": {
+                    "type": "kaiguan",
+                    "shuxing": {
+                      "name": "鼠标移入",
+                      "value": false
+                    },
+                    "children": {
+                        "toumingdu": {
+                            "type": "dapingzoom",
+                            "shuxing": {
+                              "name": "透明度",
+                              "value": 100
+                            }
+                          },
+                          "bkcolor": {
+                            "type": "colorselect",
+                            "shuxing": {
+                              "name": "背景色",
+                              "value": ""
+                            }
+                          },
+                          "imgdizhi": {
+                            "type": "sendimg",
+                            "shuxing": {
+                              "name": "图片地址",
+                              "imgtype":"elseimg", 
+                              "value": "",  
+                              "action": "" 
+                            }
+                          }
+                    }
+                  }
+                }
+              },
+              "dropdownlist": {
+                "type": "dropdownlist",
+                "children": {
+                  "rotate": {
+                    "shuxing": {
+                      "name": "旋转"
+                    },
+                    "children": {
+                      "kaiguanlist": {
+                        "type": "kaiguanlist",
+                        "children": {
+                          "pmdsz": {
+                            "type": "kaiguan",
+                            "shuxing": {
+                              "name": "开启",
+                              "value": false
+                            },
+                            "children": {
+                              "theradio": {
+                                "type": "theradio",
+                                "shuxing": {
+                                  "name": "旋转方式",
+                                  "value": "顺时针",
+                                  "liebiao": [
+                                    "顺时针",
+                                    "逆时针"
+                                  ]
+                                }
+                              },
+                              "rotatespeed": {
+                                "type": "numinput",
+                                "shuxing": {
+                                  "name": "旋转速度",
+                                  "value": 1000
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "shangsuo": {
+                    "shuxing": {
+                      "name": "闪烁"
+                    },
+                    "children": {
+                      "kaiguanlist": {
+                        "type": "kaiguanlist",
+                        "children": {
+                          "pmdsz": {
+                            "type": "kaiguan",
+                            "shuxing": {
+                              "name": "开启",
+                              "value": false
+                            },
+                            "children": {
+                              "rotatespeed": {
+                                "type": "numinput",
+                                "shuxing": {
+                                  "name": "闪烁速度",
+                                  "value": 500
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "zuyi": {
+                    "shuxing": {
+                      "name": "超链设置"
+                    },
+                    "children": {
+                      "kaiguanlist": {
+                        "type": "kaiguanlist",
+                        "children": {
+                          "pmdsz": {
+                            "type": "kaiguan",
+                            "shuxing": {
+                              "name": "开启",
+                              "value": false
+                            },
+                            "children": {
+                              "theradio": {
+                                "type": "theradio",
+                                "shuxing": {
+                                  "name": "打开方式",
+                                  "value": "新窗口",
+                                  "liebiao": [
+                                    "本窗口",
+                                    "新窗口"
+                                  ]
+                                }
+                              },
+                              "datatextarea": {
+                                "type": "datatextarea",
+                                "shuxing": {
+                                  "name": "超链接",
+                                  "value": "https://www.baidu.com"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "canShu": {
+              "zindex": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "层级",
+                  "value": 10
+                }
+              },
+              "width": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "宽度",
+                  "value": 500
+                }
+              },
+              "height": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "高度",
+                  "value": 300
+                }
+              },
+              "left": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "x",
+                  "value": 0
+                }
+              },
+              "top": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "y",
+                  "value": 0
+                }
+              }
+            }
+        }
+    }
+  }

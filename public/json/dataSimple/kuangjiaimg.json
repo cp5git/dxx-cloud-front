@@ -1,0 +1,13 @@
+{
+    "code": "200",
+    "message": "",
+    "data": [
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/center.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/kuang-center.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/kuang-daliang.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/kuang-left-right.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/kuang-title.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/small-title.png",
+        "http://14.18.234.46:8001/c3credit-front/dist/static/img/title.png"
+    ]
+}

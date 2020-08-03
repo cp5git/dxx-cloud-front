@@ -1,0 +1,277 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "pie",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "地图"
+          }
+        },
+        "bgcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "默认背景色",
+            "value": "#014b84"
+          }
+        },
+        "bordercolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "边框颜色",
+            "value": "#007ec1"
+          }
+        },
+        "borderwidth": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "边框宽度",
+            "value": 2
+          }
+        },
+        "fontSize": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "文字大小",
+            "value": 16
+          }
+        },
+        "color": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "文字颜色",
+            "value": "#75F8F1"
+          }
+        },
+        "fontWeight": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "字体粗细",
+            "value": "normal",
+            "liebiao": [
+              "normal",
+              "bold",
+              "bolder",
+              "lighter"
+            ]
+          }
+        },
+        "hoverbgcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "选中背景色",
+            "value": "#02a2ff"
+          }
+        },
+        "hoverbordercolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "选中边框色",
+            "value": "#647cc1"
+          }
+        },
+        "hoverfontSize": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "选中文字大小",
+            "value": 16
+          }
+        },
+        "hovercolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "选中文字颜色",
+            "value": "#fff"
+          }
+        },
+        "hoverfontWeight": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "选中字体粗细",
+            "value": "normal",
+            "liebiao": [
+              "normal",
+              "bold",
+              "bolder",
+              "lighter"
+            ]
+          }
+        },
+        
+
+
+        "shadowColor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "阴影",
+            "value": "#007ec1"
+          }
+        },
+        "shadowBlur": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "阴影大小",
+            "value": 0
+          }
+        },
+        "dropdownlist": {
+          "type": "dropdownlist",
+          "children": {
+            "animate": {
+              "shuxing": {
+                "name": "动画设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "动画开关",
+                    "value": false
+                  }
+                },
+                "speed": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "频率(毫秒)",
+                    "value": 2000
+                  }
+                },
+                "round": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "区间值",
+                    "value": 4
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "shuJu": {
+        "dataType": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "数据类型",
+                "value": "static",
+                "liebiao": [
+                  "static",
+                  "API"
+                ]
+              },
+              "children": {
+                "static": {
+                  "children": {
+                    "data": {
+                      "type": "bianji",
+                      "shuxing": {
+                        "name": "数据值",
+                        "value": [
+                          { "name": "陈村",  "value": 100 },
+                          { "name": "北滘",  "value": 200 },
+                          { "name": "伦教",  "value": 300 },
+                          { "name": "大良", "value": 400 },
+                          { "name": "容桂",  "value": 500 },
+                          { "name": "乐从",  "value": 600 },
+                          { "name": "龙江",  "value": 700 },
+                          { "name": "勒流",  "value": 800 },
+                          { "name": "杏坛",  "value": 900 },
+                          { "name": "均安",  "value": 1000 }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "API": {
+                  "children": {
+                    "apiParam": {
+                      "type": "kaiguanlist",
+                      "children": {
+                        "apiUrl": {
+                          "type": "datatextarea",
+                          "shuxing": {
+                            "name": "接口地址",
+                            "value": "./json/dataSimple/pie.json"
+                          }
+                        },
+                        "apiType": {
+                          "type": "theradio",
+                          "shuxing": {
+                            "name": "接口方式",
+                            "value": "GET",
+                            "liebiao": [
+                              "GET",
+                              "POST"
+                            ]
+                          }
+                        },
+                        "postParam": {
+                          "type": "bianji",
+                          "shuxing": {
+                            "name": "接口参数",
+                            "value": "{a:20}"
+                          }
+                        },
+                        "refresh": {
+                          "type": "numinput",
+                          "shuxing": {
+                            "name": "刷新时间",
+                            "value": 5000
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+            
+      },
+      "canShu": {
+        "zindex": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 300
+          }
+        },
+        "left": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

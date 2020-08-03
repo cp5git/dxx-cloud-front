@@ -1,0 +1,155 @@
+{
+    "code": "200",
+    "message": "",
+    "data": {
+        "moduleType": "bar",
+        "param": {
+            "peiZhi": {
+                "name": {
+                    "type": "texttitle",
+                    "shuxing": {
+                        "name": "动画"
+                    }
+                },
+                "dhtyperadio": {
+                    "type": "theradiolist",
+                    "children": {
+                        "theradio": {
+                            "type": "theradio",
+                            "shuxing": {
+                                "name": "数据类型",
+                                "value": "静态数据",
+                                "liebiao": [
+                                    "静态数据",
+                                    "动态数据"
+                                ]
+                            },
+                            "children": {
+                                "静态数据": {
+                                    "children": {
+                                        "dhtype": {
+                                            "type": "xialaselect",
+                                            "shuxing": {
+                                                "name": "动画类型",
+                                                "value": "边框",
+                                                "liebiao": [
+                                                    "边框"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "动态数据": {
+                                    "children": {
+                                        "dhtype": {
+                                            "type": "datatextarea",
+                                            "shuxing": {
+                                                "name": "动画类型",
+                                                "value": "https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "bffanshi": {
+                    "type": "theradio",
+                    "shuxing": {
+                        "name": "播放方式",
+                        "value": "自动播放",
+                        "liebiao": [
+                            "自动播放",
+                            "鼠标移入播放"
+                        ]
+                    }
+                },
+                "bffanxian": {
+                    "type": "theradio",
+                    "shuxing": {
+                        "name": "播放方向",
+                        "value": "正向",
+                        "liebiao": [
+                            "正向",
+                            "反向"
+                        ]
+                    }
+                },
+                "theradiolist": {
+                    "type": "theradiolist",
+                    "children": {
+                        "theradio": {
+                            "type": "theradio",
+                            "shuxing": {
+                                "name": "播放次数",
+                                "value": "循环播放",
+                                "liebiao": [
+                                    "循环播放",
+                                    "次数播放"
+                                ]
+                            },
+                            "children": {
+                                "次数播放": {
+                                    "children": {
+                                        "numinput": {
+                                            "type": "numinput",
+                                            "shuxing": {
+                                                "name": "次数",
+                                                "value": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "dapingzoom": {
+                    "type": "dapingzoom",
+                    "shuxing": {
+                        "name": "播放速度",
+                        "value": 20
+                    }
+                }
+            },
+            "canShu": {
+                "zindex": {
+                    "type": "textinput",
+                    "shuxing": {
+                        "name": "层级",
+                        "value": 10
+                    }
+                },
+                "width": {
+                    "type": "textinput",
+                    "shuxing": {
+                        "name": "宽度",
+                        "value": 500
+                    }
+                },
+                "height": {
+                    "type": "textinput",
+                    "shuxing": {
+                        "name": "高度",
+                        "value": 500
+                    }
+                },
+                "left": {
+                    "type": "textinput",
+                    "shuxing": {
+                        "name": "x",
+                        "value": 0
+                    }
+                },
+                "top": {
+                    "type": "textinput",
+                    "shuxing": {
+                        "name": "y",
+                        "value": 0
+                    }
+                }
+            }
+        }
+    }
+}

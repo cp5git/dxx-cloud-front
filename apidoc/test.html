@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>
+        该页面用来输出api列表
+    </h2>
+    <div class="url"></div>
+    <div class="apilist"></div>
+    <script type="text/javascript">
+    var localName = 'appurl'; //url的局部变量名称
+
+    $.get("./doc/api_project.json", function(result) {
+        var str = '//let ' + localName + ' = "' + result.sampleUrl + '"; //服务器数据路径';
+
+        var str2 = 'let ' + localName + ' = "' + result.url + '"; //mock数据路径';
+        $('.url').append(str)
+        $('.url').append('<br/>')
+        $('.url').append(str2)
+        $('.url').append('<br/>')
+        getList();
+    });
+
+
+    function getList() {
+        $.get("./doc/api_data.json", function(result) {
+
+            var newArr = result.filter((val, i) => {
+                return val.url.length > 0 && val.url != '/all'
+            })
+            console.log(newArr)
+            var htmlStr = '';
+            $('.url').append('<br/>let link = {<br/>')
+            newArr.forEach((val, i) => {
+                var demArr = val.url.split('/');
+                var demLoc = demArr[demArr.length - 1];
+
+                htmlStr += "//分组:" + val.group+ '---' + val.title + "</br>'";
+                htmlStr += demLoc + "':"+localName+"+'" + val.url + "',<br/>"
+            })
+            $('.url').append(htmlStr)
+            $('.url').append('}')
+        });
+    }
+    </script>
+</body>
+
+</html>

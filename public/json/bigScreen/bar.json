@@ -1,0 +1,831 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "bar",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "柱状图"
+          }
+        },
+        "theradiolist": {
+          "type": "theradiolist",
+          "children": {
+            "barType": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "柱状类型",
+                "value": "bar",
+                "liebiao": [
+                  "bar",
+                  "pictorialBar"
+                ]
+              },
+              "children": {
+                "bar": {
+                  "children": {
+                    "vertical": {
+                      "type": "kaiguan",
+                      "shuxing": {
+                        "name": "横展示",
+                        "value": false
+                      }
+                    },
+                    "barWidth": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "柱宽",
+                        "value": 20
+                      }
+                    },
+                    "barBorderRadius": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "柱圆角",
+                        "value": "[0, 0, 0, 0]"
+                      }
+                    }
+                  }
+                },
+                "pictorialBar": {
+                  "children": {
+                    "symbolType": {
+                      "type": "xialaselect",
+                      "shuxing": {
+                        "name": "图形类型",
+                        "value": "roundRect",
+                        "liebiao": [
+                          "circle",
+                          "rect",
+                          "roundRect",
+                          "triangle",
+                          "diamond",
+                          "pin",
+                          "arrow",
+                          "none"
+                        ]
+                      }
+                    },
+                    "symbolRepeat": {
+                      "type": "kaiguan",
+                      "shuxing": {
+                        "name": "元素重复",
+                        "value": true
+                      }
+                    },
+                    "w": {
+                      "type": "numinput",
+                      "shuxing": {
+                        "name": "宽",
+                        "value": 33
+                      }
+                    },
+                    "h": {
+                      "type": "numinput",
+                      "shuxing": {
+                        "name": "高",
+                        "value": 15
+                      }
+                    },
+                    "padding": {
+                      "type": "numinput",
+                      "shuxing": {
+                        "name": "间隔",
+                        "value": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "dropdownlist": {
+          "type": "dropdownlist",
+          "children": {
+            "xZhou": {
+              "shuxing": {
+                "name": "X轴设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示",
+                    "value": true
+                  }
+                },
+                "splitLine": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示网格线",
+                    "value": false
+                  }
+                },
+                "zhouSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "轴宽",
+                    "value": 2
+                  }
+                },
+                "zhouColor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "轴颜色",
+                    "value": "#fff"
+                  }
+                },
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 14
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                },
+                "rotate": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字倾斜角度",
+                    "value": 0
+                  }
+                }
+              }
+            },
+            "yZhou": {
+              "shuxing": {
+                "name": "Y轴设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示",
+                    "value": true
+                  }
+                },
+                "splitLine": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示网格线",
+                    "value": false
+                  }
+                },
+                "inverse": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "数组倒置",
+                    "value": false
+                  }
+                },
+                "zhouSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "轴宽",
+                    "value": 2
+                  }
+                },
+                "zhouColor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "轴颜色",
+                    "value": "#fff"
+                  }
+                },
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 14
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                },
+                "rotate": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字倾斜角度",
+                    "value": 0
+                  }
+                }
+              }
+            },
+            "grid": {
+              "shuxing": {
+                "name": "边距设置"
+              },
+              "children": {
+                "top": {
+                  "type": "dapingzoom",
+                  "shuxing": {
+                    "name": "顶边距",
+                    "value": 10
+                  }
+                },
+                "left": {
+                  "type": "dapingzoom",
+                  "shuxing": {
+                    "name": "左边距",
+                    "value": 10
+                  }
+                },
+                "height": {
+                  "type": "dapingzoom",
+                  "shuxing": {
+                    "name": "高度占比",
+                    "value": 80
+                  }
+                },
+                "width": {
+                  "type": "dapingzoom",
+                  "shuxing": {
+                    "name": "宽度占比",
+                    "value": 90
+                  }
+                }
+              }
+            },
+            "label": {
+              "shuxing": {
+                "name": "数值设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示",
+                    "value": false
+                  }
+                },
+                "position": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "标签位置",
+                    "value": "outside",
+                    "liebiao": [
+                      "outside",
+                      "inside",
+                      "top",
+                      "left",
+                      "right",
+                      "bottom",
+                      "insideLeft",
+                      "insideRight",
+                      "insideTop",
+                      "insideBottom"
+                    ]
+                  }
+                },
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 14
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "align": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "水平对齐",
+                    "value": "center",
+                    "liebiao": [
+                      "center",
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "verticalAlign": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "垂直对齐",
+                    "value": "middle",
+                    "liebiao": [
+                      "top",
+                      "middle",
+                      "bottom"
+                    ]
+                  }
+                },
+                "distance": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "距离",
+                    "value": 5
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                }
+              }
+            },
+            "title": {
+              "shuxing": {
+                "name": "标题设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "开关选择",
+                    "value": false
+                  }
+                },
+                "text": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "标题内容",
+                    "value": "标题内容"
+                  }
+                },
+                "left": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "水平位置",
+                    "value": "center",
+                    "liebiao": [
+                      "left",
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 16
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                }
+              }
+            },
+            "legend": {
+              "shuxing": {
+                "name": "图例设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "开关选择",
+                    "value": false
+                  }
+                },
+                "itemWidth": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "图例宽度",
+                    "value": 25
+                  }
+                },
+                "orient": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "布局朝向",
+                    "value": "horizontal",
+                    "liebiao": [
+                      "horizontal",
+                      "vertical"
+                    ]
+                  }
+                },
+                "align": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "图例朝向",
+                    "value": "left",
+                    "liebiao": [
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "left": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "水平位置",
+                    "value": "center",
+                    "liebiao": [
+                      "left",
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "top": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "垂直位置",
+                    "value": "top",
+                    "liebiao": [
+                      "top",
+                      "middle",
+                      "bottom"
+                    ]
+                  }
+                },
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 14
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                }
+              }
+            },
+            "tooltip": {
+              "shuxing": {
+                "name": "提示信息"
+              },
+              "children": {
+                "fontSize": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 14
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "color": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "背景颜色",
+                    "value": "rgba(13,54,75,0.9)"
+                  }
+                }
+              }
+            },
+            "color": {
+              "shuxing": {
+                "name": "自定义颜色"
+              },
+              "children": {
+                "direction": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "渐变方向",
+                    "value": "top",
+                    "liebiao": [
+                      "top",
+                      "bottom",
+                      "right",
+                      "left"
+                    ]
+                  }
+                },
+                "selfcolor": {
+                  "type": "zidingyipeise",
+                  "shuxing": {
+                    "name": "自定义配色",
+                    "value": [
+                      {
+                        "colorfirst": "#72C0F3",
+                        "colorsecond": "#FAD99C"
+                      },
+                      {
+                        "colorfirst": "#FAD99C",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#5BCCA5",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#19aef1",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#a7d951",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#4bdbc6",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#2196f3",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#fb767c",
+                        "colorsecond": ""
+                      },
+                      {
+                        "colorfirst": "#4e78f1",
+                        "colorsecond": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "animate": {
+              "shuxing": {
+                "name": "animate动画设置"
+              },
+              "children": {
+                "show": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "动画开关",
+                    "value": false
+                  }
+                },
+                "speed": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "频率(毫秒)",
+                    "value": 2000
+                  }
+                },
+                "round": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "区间值",
+                    "value": 4
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "shuJu": {
+        "dataType": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "数据类型",
+                "value": "static",
+                "liebiao": [
+                  "static",
+                  "API"
+                ]
+              },
+              "children": {
+                "static": {
+                  "children": {
+                    "data": {
+                      "type": "bianji",
+                      "shuxing": {
+                        "name": "数据值",
+                        "value": {
+                          "column": [
+                            "Mon",
+                            "Tue",
+                            "Wed",
+                            "Thu",
+                            "Fri",
+                            "Sat",
+                            "Sun"
+                          ],
+                          "data": [
+                            {
+                              "name": "A数值",
+                              "data": [
+                                1820,
+                                932,
+                                901,
+                                934,
+                                1290,
+                                1330,
+                                1320
+                              ]
+                            },
+                            {
+                              "name": "B数值",
+                              "stack": "组群",
+                              "data": [
+                                20,
+                                32,
+                                91,
+                                34,
+                                290,
+                                330,
+                                320
+                              ]
+                            },
+                            {
+                              "name": "C数值",
+                              "stack": "组群",
+                              "data": [
+                                10,
+                                12,
+                                11,
+                                14,
+                                190,
+                                230,
+                                120
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "API": {
+                  "children": {
+                    "apiParam": {
+                      "type": "kaiguanlist",
+                      "children": {
+                        "apiUrl": {
+                          "type": "datatextarea",
+                          "shuxing": {
+                            "name": "接口地址",
+                            "value": "./json/dataSimple/bar.json"
+                          }
+                        },
+                        "apiType": {
+                          "type": "theradio",
+                          "shuxing": {
+                            "name": "接口方式",
+                            "value": "GET",
+                            "liebiao": [
+                              "GET",
+                              "POST"
+                            ]
+                          }
+                        },
+                        "postParam": {
+                          "type": "bianji",
+                          "shuxing": {
+                            "name": "接口参数",
+                            "value": "{a:20}"
+                          }
+                        },
+                        "refresh": {
+                          "type": "numinput",
+                          "shuxing": {
+                            "name": "刷新时间",
+                            "value": 5000
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "canShu": {
+        "zindex": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 300
+          }
+        },
+        "left": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

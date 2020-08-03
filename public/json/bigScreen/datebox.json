@@ -1,0 +1,176 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "pie",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "实时日期"
+          }
+        },
+        "timegs": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "时间格式",
+                "value": "默认",
+                "liebiao": [
+                  "默认",
+                  "自定义"
+                ]
+              },
+              "children": {
+                "默认": {
+                  "children": {
+                    "shijiangeshi": {
+                      "type": "xialaselect",
+                      "shuxing": {
+                        "name": "默认格式",
+                        "value": "日期",
+                        "liebiao": [
+                          "日期",
+                          "日期+时分",
+                          "日期+时分秒",
+                          "日期(无年)",
+                          "时分",
+                          "时分秒",
+                          "星期"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "自定义": {
+                  "children": {
+                    "textinput": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "自定义格式",
+                        "value": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fontfamily": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "字体",
+            "value": "微软雅黑",
+            "liebiao": [
+              "黑体",
+              "宋体",
+              "微软雅黑",
+              "Regular"
+            ]
+          }
+        },
+        "fontsize": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "字体大小",
+            "value": 30
+          }
+        },
+        "fontspacing": {
+          "type": "dapingzoom",
+          "shuxing": {
+            "name": "字体间距",
+            "value": 0
+          }
+        },
+        "fontWeight": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "字体粗细",
+            "value": "normal",
+            "liebiao": [
+              "normal",
+              "bold",
+              "bolder",
+              "lighter"
+            ]
+          }
+        },
+        "fontcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "字体颜色",
+            "value": "#fff"
+          }
+        },
+        "fontHeight": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "行高",
+            "value": 40
+          }
+        },
+        "fontbkcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "字体背景",
+            "value": ""
+          }
+        },
+        "fontOragin": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "对齐方式",
+            "value": "center",
+            "liebiao": [
+              "center",
+              "left",
+              "right"
+            ]
+          }
+        }
+      },
+      "canShu": {
+        "zindex": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 300
+          }
+        },
+        "left": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "code": "200",
+    "message": "",
+    "data": {
+        "column": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "data": [
+            { "name": "陈村",  "value": 100 },
+            { "name": "北滘",  "value": 200 },
+            { "name": "伦教",  "value": 300 },
+            { "name": "大良",  "value": 400 },
+            { "name": "容桂",  "value": 500 },
+            { "name": "乐从",  "value": 600 },
+            { "name": "龙江",  "value": 700 },
+            { "name": "勒流",  "value": 800 },
+            { "name": "杏坛",  "value": 900 },
+            { "name": "均安",  "value": 1000 }
+          ]
+    }
+}

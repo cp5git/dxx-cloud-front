@@ -1,0 +1,18 @@
+{
+    "code": "200",
+    "message": "",
+    "data": [
+        { "name": "极好", "value": 3
+        },
+        { "name": "优秀", "value": 100
+        },
+        { "name": "良好", "value": 20
+        },
+        { "name": "一般", "value": 44
+        },
+        { "name": "提示", "value": 20
+        },
+        { "name": "风险", "value": 3
+        }
+    ]
+}

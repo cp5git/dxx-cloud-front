@@ -1,0 +1,325 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "pie",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "标题"
+          }
+        },
+        "content": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "内容",
+            "value": "我只是个例子！",
+            "path": "peiZhi@content@shuxing"
+          }
+        },
+        "texttitle": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "文本标题"
+          }
+        },
+        "numinput": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "数字输入框",
+            "value": 1920
+          }
+        },
+        "textinput": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "文本框",
+            "value": ""
+          }
+        },
+        "datatextarea": {
+          "type": "datatextarea",
+          "shuxing": {
+            "name": "多行文本框",
+            "value": "多行文本框"
+          }
+        },
+        "colorselect": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "颜色选择框",
+            "value": "#fff"
+          }
+        },
+        "sendimg": {
+          "type": "sendimg",
+          "shuxing": {
+            "name": "上传图片",
+            "imgtype":"dapinbkimg", 
+            "value": "http:/ssss",  
+            "action": "http:qqqqqqqqqqq/" 
+          }
+        },
+        "dapingzoom": {
+          "type": "dapingzoom",
+          "shuxing": {
+            "name": "拉条",
+            "value": 50
+          }
+        },
+        "kaiguan": {
+          "type": "kaiguan",
+          "shuxing": {
+            "name": "开关选择",
+            "value": true
+          }
+        },
+        "kaiguanlist": {
+          "type": "kaiguanlist",
+          "children": {
+            "shuiying": {
+              "type": "kaiguan",
+              "shuxing": {
+                "name": "开关下拉",
+                "value": false
+              },
+              "class": [
+                "tongyong"
+              ],
+              "children": {
+                "neirong": {
+                  "type": "textinput",
+                  "shuxing": {
+                    "name": "文本框",
+                    "value": ""
+                  }
+                }
+              }
+            }
+          }
+        },
+        "dropdownlist": {
+          "type": "dropdownlist",
+          "children": {
+            "zuyi": {
+              "shuxing": {
+                "name": "下拉列表"
+              },
+              "children": {
+                "datatextarea": {
+                  "type": "datatextarea",
+                  "shuxing": {
+                    "name": "多行文本框",
+                    "value": "多行文本框"
+                  }
+                },
+                "colorselect": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "颜色选择框",
+                    "value": "#fff"
+                  }
+                },
+                "colorselect2": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "颜色选择框",
+                    "value": "#fff"
+                  }
+                }
+              }
+            },
+            "zuer": {
+              "shuxing": {
+                "name": "下拉列表"
+              },
+              "children": {
+                "datatextarea": {
+                  "type": "datatextarea",
+                  "shuxing": {
+                    "name": "多行文本框",
+                    "value": "多行文本框"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "xialaselect": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "下拉选择器",
+            "value": "lucy",
+            "liebiao": [
+              "Jack",
+              "lucy"
+            ]
+          }
+        },
+        "theradio": {
+          "type": "theradio",
+          "shuxing": {
+            "name": "单选",
+            "value": "lucy",
+            "liebiao": [
+              "Jack",
+              "lucy"
+            ]
+          }
+        },
+        "theradiolist": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "单选列表",
+                "value": "lucy",
+                "liebiao": [
+                  "Jack",
+                  "lucy"
+                ]
+              },
+              "children": {
+                "Jack": {
+                  "children": {
+                    "wbk": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "文本框",
+                        "value": ""
+                      }
+                    },
+                    "wbk2": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "文本框",
+                        "value": ""
+                      }
+                    }
+                  }
+                },
+                "lucy": {
+                  "children": {
+                    "kgxl": {
+                      "type": "kaiguanlist",
+                      "children": {
+                        "shuiying": {
+                          "type": "kaiguan",
+                          "shuxing": {
+                            "name": "开关下拉",
+                            "value": false
+                          },
+                          "children": {
+                            "neirong": {
+                              "type": "textinput",
+                              "shuxing": {
+                                "name": "文本框",
+                                "value": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "bianji": {
+          "type": "bianji",
+          "shuxing": {
+            "name": "编辑",
+            "value": "编辑编辑编辑"
+          }
+        },
+        "addtableheader": {
+          "type": "addtableheader",
+          "shuxing": {
+            "name": [
+              "名称",
+              "key值",
+              "宽度"
+            ],
+            "value": [
+              {
+                "name": "采集部门",
+                "key": "cjbm",
+                "width": 120
+              },
+              {
+                "name": "采部门",
+                "key": "cbm",
+                "width": 120
+              },
+              {
+                "name": "采集门",
+                "key": "cjm",
+                "width": 120
+              }
+            ]
+          }
+        },
+        "zidingyipeise": {
+          "type": "zidingyipeise",
+          "shuxing": {
+            "name": "自定义配色",
+            "value": [
+              {
+                "colorfirst": "#fff",
+                "colorsecond": "#000"
+              },
+              {
+                "colorfirst": "#fff",
+                "colorsecond": "#000"
+              }
+            ]
+          }
+        }
+      },
+      "shuJu": {},
+      "geShiHua": {},
+      "canShu": {
+        "zindex": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 100
+          }
+        },
+        "left": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

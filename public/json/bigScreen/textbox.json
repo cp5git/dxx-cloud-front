@@ -1,0 +1,248 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "pie",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "文本框"
+          }
+        },
+        "readtext": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "读取文本方式",
+                "value": "自定义",
+                "liebiao": [
+                  "自定义",
+                  "读取vuex"
+                ]
+              },
+              "children": {
+                "自定义": {
+                  "children": {
+                    "content": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "文本内容",
+                        "value": "我只是个例子！"
+                      }
+                    }
+                  }
+                },
+                "读取vuex": {
+                  "children": {
+                    "content": {
+                      "type": "textinput",
+                      "shuxing": {
+                        "name": "veux文本内容",
+                        "value": "name"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fenweifu": {
+          "type": "kaiguan",
+          "shuxing": {
+            "name": "千分位符",
+            "value": false
+          }
+        },
+        "fontfamily": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "字体",
+            "value": "微软雅黑",
+            "liebiao": [
+              "黑体",
+              "宋体",
+              "微软雅黑",
+              "Regular"
+            ]
+          }
+        },
+        "fontsize": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "字体大小",
+            "value": 30
+          }
+        },
+        "fontspacing": {
+          "type": "dapingzoom",
+          "shuxing": {
+            "name": "字体间距",
+            "value": 0
+          }
+        },
+        "fontWeight": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "字体粗细",
+            "value": "normal",
+            "liebiao": [
+              "normal",
+              "bold",
+              "bolder",
+              "lighter"
+            ]
+          }
+        },
+        "fontcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "字体颜色",
+            "value": "#fff"
+          }
+        },
+        "fontHeight": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "行高",
+            "value": 40
+          }
+        },
+        "fontbkcolor": {
+          "type": "colorselect",
+          "shuxing": {
+            "name": "字体背景",
+            "value": "inherit"
+          }
+        },
+        "fontOragin": {
+          "type": "xialaselect",
+          "shuxing": {
+            "name": "对齐方式",
+            "value": "center",
+            "liebiao": [
+              "center",
+              "left",
+              "right"
+            ]
+          }
+        },
+        "dropdownlist": {
+          "type": "dropdownlist",
+          "children": {
+            "zuyi": {
+              "shuxing": {
+                "name": "跑马灯设置"
+              },
+              "children": {
+                "kaiguanlist": {
+                  "type": "kaiguanlist",
+                  "children": {
+                    "pmdsz": {
+                      "type": "kaiguan",
+                      "shuxing": {
+                        "name": "开启",
+                        "value": false
+                      },
+                      "children": {
+                        "scrollspeed": {
+                          "type": "numinput",
+                          "shuxing": {
+                            "name": "滚动速度",
+                            "value": 20
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "zuer": {
+              "shuxing": {
+                "name": "超链设置"
+              },
+              "children": {
+                "kaiguanlist": {
+                  "type": "kaiguanlist",
+                  "children": {
+                    "pmdsz": {
+                      "type": "kaiguan",
+                      "shuxing": {
+                        "name": "开启",
+                        "value": false
+                      },
+                      "children": {
+                        "theradio": {
+                          "type": "theradio",
+                          "shuxing": {
+                            "name": "打开方式",
+                            "value": "新窗口",
+                            "liebiao": [
+                              "本窗口",
+                              "新窗口"
+                            ]
+                          }
+                        },
+                        "datatextarea": {
+                          "type": "datatextarea",
+                          "shuxing": {
+                            "name": "超链接",
+                            "value": "https://www.baidu.com"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "shuJu": {
+      },
+      "canShu": {
+        "zindex": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 100
+          }
+        },
+        "left": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "textinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "code": "200",
+  "message": "",
+  "data": {
+    "moduleType": "pie",
+    "param": {
+      "peiZhi": {
+        "name": {
+          "type": "texttitle",
+          "shuxing": {
+            "name": "表格"
+          }
+        },
+        "scroll": {
+          "type": "kaiguanlist",
+          "children": {
+            "gundong": {
+              "type": "kaiguan",
+              "shuxing": {
+                "name": "开启滚动",
+                "value": true
+              },
+              "children": {
+                "speed": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "滚动速度",
+                    "value": 20
+                  }
+                }
+              }
+            }
+          }
+        },
+        "biaotoushezhi": {
+          "type": "dropdownlist",
+          "children": {
+            "zuyi": {
+              "shuxing": {
+                "name": "表头设置"
+              },
+              "children": {
+                "showheader": {
+                  "type": "kaiguan",
+                  "shuxing": {
+                    "name": "显示",
+                    "value": true
+                  }
+                },
+                "fontSize": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 20
+                  }
+                },
+                "fontcolor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#36bfff"
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "fontOragin": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体位置",
+                    "value": "center",
+                    "liebiao": [
+                      "center",
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "fontHeight": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "行高",
+                    "value": 40
+                  }
+                },
+                "bkcolor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "背景颜色",
+                    "value": ""
+                  }
+                }
+              }
+            },
+            "zuer": {
+              "shuxing": {
+                "name": "表体设置"
+              },
+              "children": {
+                "fontSize": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "文字大小",
+                    "value": 20
+                  }
+                },
+                "fontcolor": {
+                  "type": "colorselect",
+                  "shuxing": {
+                    "name": "文字颜色",
+                    "value": "#fff"
+                  }
+                },
+                "fontWeight": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体粗细",
+                    "value": "normal",
+                    "liebiao": [
+                      "normal",
+                      "bold",
+                      "bolder",
+                      "lighter"
+                    ]
+                  }
+                },
+                "fontHeight": {
+                  "type": "numinput",
+                  "shuxing": {
+                    "name": "行高",
+                    "value": 40
+                  }
+                },
+                "fontOragin": {
+                  "type": "xialaselect",
+                  "shuxing": {
+                    "name": "字体位置",
+                    "value": "center",
+                    "liebiao": [
+                      "center",
+                      "left",
+                      "right"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "biaotou": {
+          "type": "addtableheader",
+          "shuxing": {
+            "name": [
+              "名称",
+              "key值",
+              "宽度"
+            ],
+            "value": [
+              {
+                "title": "采集部门",
+                "dataIndex": "部门",
+                "width": "40%"
+              },
+              {
+                "title": "采集方式",
+                "dataIndex": "采集方式",
+                "width": "20%"
+              },
+              {
+                "title": "已完成",
+                "dataIndex": "已完成数量",
+                "width": "10%"
+              },
+              {
+                "title": "未完成",
+                "dataIndex": "未完成数量",
+                "width": "10%"
+              },
+              {
+                "title": "错误",
+                "dataIndex": "错误数量",
+                "width": "10%"
+              },
+              {
+                "title": "总数",
+                "dataIndex": "信息类数量",
+                "width": "10%"
+              }
+            ]
+          }
+        }
+      },
+      "shuJu": {
+        "dataType": {
+          "type": "theradiolist",
+          "children": {
+            "theradio": {
+              "type": "theradio",
+              "shuxing": {
+                "name": "数据类型",
+                "value": "static",
+                "liebiao": [
+                  "static",
+                  "API"
+                ]
+              },
+              "children": {
+                "static": {
+                  "children": {
+                    "data": {
+                      "type": "bianji",
+                      "shuxing": {
+                        "name": "数据值",
+                        "value": [
+                          {
+                            "部门": "区司法局",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "10",
+                            "信息类数量": "10",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "b1ee660ca5cb00d066b73662a59c2caa"
+                          },
+                          {
+                            "部门": "区税务局",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "9",
+                            "信息类数量": "9",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "487a46905e70717d1215295c5223814d"
+                          },
+                          {
+                            "部门": "水业公司",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "0",
+                            "信息类数量": "2",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-10",
+                            "RID": "d4e8468f9d3bbd6f8e9660844b21da79"
+                          },
+                          {
+                            "部门": "区法院",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "2",
+                            "信息类数量": "2",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "5e98c9049b1ba9b7cd51fabc3430c33f"
+                          },
+                          {
+                            "部门": "区法院",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "0",
+                            "信息类数量": "4",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-10",
+                            "RID": "75d350da891dd95126921f9a8a0a63b6"
+                          },
+                          {
+                            "部门": "水业公司",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "2",
+                            "信息类数量": "2",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "5b98b46c3161ce67d187c12fbd40342d"
+                          },
+                          {
+                            "部门": "公共部门",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "0",
+                            "信息类数量": "6",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-10",
+                            "RID": "51b93cfdcf5d2e2b18fa79ea089182ae"
+                          },
+                          {
+                            "部门": "区司法局",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "0",
+                            "信息类数量": "10",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-10",
+                            "RID": "20782bfc6cd20854e632bfb05d395c76"
+                          },
+                          {
+                            "部门": "区税务局",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "0",
+                            "信息类数量": "13",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-10",
+                            "RID": "423e996d1e4d51365673b951e622372b"
+                          },
+                          {
+                            "部门": "公共部门",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "2",
+                            "信息类数量": "2",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "1d45d9732b230ed90dd2bff5b98dc1df"
+                          },
+                          {
+                            "部门": "省发改",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "13",
+                            "信息类数量": "13",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "8d73232061e8c14f7be867f6d3ade52b"
+                          },
+                          {
+                            "部门": "区市场监督管理局",
+                            "未完成数量": "0",
+                            "采集方式": "云平台",
+                            "已完成数量": "69",
+                            "信息类数量": "69",
+                            "错误数量": "0",
+                            "调度日期": "2020-06-09",
+                            "RID": "e7f2d1fdc1f76e827668e26dfee08ed9"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "API": {
+                  "children": {
+                    "apiParam": {
+                      "type": "kaiguanlist",
+                      "children": {
+                        "apiUrl": {
+                          "type": "datatextarea",
+                          "shuxing": {
+                            "name": "接口地址",
+                            "value": "./json/dataSimple/mtable.json"
+                          }
+                        },
+                        "apiType": {
+                          "type": "theradio",
+                          "shuxing": {
+                            "name": "接口方式",
+                            "value": "GET",
+                            "liebiao": [
+                              "GET",
+                              "POST"
+                            ]
+                          }
+                        },
+                        "postParam": {
+                          "type": "bianji",
+                          "shuxing": {
+                            "name": "接口参数",
+                            "value": "{a:20}"
+                          }
+                        },
+                        "refresh": {
+                          "type": "numinput",
+                          "shuxing": {
+                            "name": "刷新时间",
+                            "value": 5000
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "canShu": {
+        "zindex": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "层级",
+            "value": 10
+          }
+        },
+        "width": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "宽度",
+            "value": 500
+          }
+        },
+        "height": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "高度",
+            "value": 300
+          }
+        },
+        "left": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "x",
+            "value": 0
+          }
+        },
+        "top": {
+          "type": "numinput",
+          "shuxing": {
+            "name": "y",
+            "value": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "code": "200",
+    "message": "",
+    "data": {
+        "moduleType": "pie",
+        "param": {
+            "peiZhi": {
+                "name": {
+                    "type": "text",
+                    "shuxing": {},
+                    "key": "name",
+                    "title": "图层名称",
+                    "value": "半圆占比图",
+                    "show": true,
+                    "children": {}
+                }
+            },
+            "shuJu": {},
+            "geShiHua": {},
+            "canShu": {
+              "zindex": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "层级",
+                  "value": 10
+                }
+              },
+              "width": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "宽度",
+                  "value": 500
+                }
+              },
+              "height": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "高度",
+                  "value": 300
+                }
+              },
+              "left": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "x",
+                  "value": 0
+                }
+              },
+              "top": {
+                "type": "textinput",
+                "shuxing": {
+                  "name": "y",
+                  "value": 0
+                }
+              }
+            }
+        }
+    }
+  }
